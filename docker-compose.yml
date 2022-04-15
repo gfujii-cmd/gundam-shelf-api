@@ -1,9 +1,10 @@
 version: '3.9'
 services:
   db:
-    images: postgres:latest
+    container_name: gundam_db
+    image: postgres:latest
     environment:
-      - POSTGRES_USER=admin
+      - POSTGRES_DB=gundam_dev
       - POSTGRES_PASSWORD=admin
     ports:
       - '5432:5432'

@@ -1,0 +1,2 @@
+class Gundam < ApplicationRecord
+end
